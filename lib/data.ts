@@ -44,9 +44,9 @@ export const projects: Project[] = [
   },
   {
     id: "shore-quest",
-    title: "Shore Quest",
+    title: "ShoreQuest",
     summary: "An interactive application for exploring coastal areas and history.",
-    description: "Created an engaging and educational interface for Shore Quest. Focused on integrating mapping features with rich storytelling elements to enhance the user's exploratory experience.",
+    description: "Created an engaging and educational interface for ShoreQuest. Focused on integrating mapping features with rich storytelling elements to enhance the user's exploratory experience.",
     imageUrl: "/shoreQuest.png",
     techStack: ["App Design", "Service Design", "Visual Storytelling"],
   }

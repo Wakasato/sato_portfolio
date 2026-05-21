@@ -52,74 +52,6 @@ export default function CampaignSystemCaseStudy() {
             <span className="text-gray-700 dark:text-gray-300 ml-2">HR Tech</span>
           </div>
         </section>
-
-        {/* Problem */}
-        <section className="flex flex-col gap-4">
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm">Problem</h3>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-            The campaign team was manually loading each promotion from scratch — coordinating across Sales, Legal, Engineering, and Operations within a semi-manual process. A single campaign took weeks of unstandardised manual work, limiting execution to once a year and creating massive risk to a core revenue driver platform used by 5M+ users.
-          </p>
-        </section>
-
-        {/* Impact & Outcomes */}
-        <section className="flex flex-col gap-4">
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm">Impact & Outcomes</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-0 border-y border-gray-200 dark:border-gray-800 divide-x divide-gray-200 dark:divide-gray-800 py-6 my-2">
-            <div className="flex flex-col px-6 gap-1">
-              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">£200k</span>
-              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">quarterly revenue uplift</span>
-            </div>
-            <div className="flex flex-col px-6 gap-1">
-              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">Zero</span>
-              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">incidents across all releases</span>
-            </div>
-            <div className="flex flex-col px-6 gap-1">
-              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">4x</span>
-              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">promotion frequency increase</span>
-            </div>
-            <div className="flex flex-col px-6 gap-1">
-              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">25%</span>
-              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">reduction in operational effort</span>
-            </div>
-          </div>
-          <p className="text-gray-600 dark:text-gray-400 text-sm mt-2">
-            The campaign system I redesigned enabled the business to run 4x more campaigns per year. At ~£30–40M revenue per campaign cycle, scaling from 1 to 4 annual campaigns directly contributed to significant revenue uplift — conservatively estimated at £200K+ in incremental quarterly gains.
-          </p>
-        </section>
-
-        {/* Design Decision (Before / After) */}
-        <section className="flex flex-col gap-8">
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm border-b border-gray-200 dark:border-gray-800 pb-2">Design Decision</h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Before */}
-            <div className="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-4 shadow-sm">
-              <div className="relative rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800">
-                <img
-                  src="/before-ui.png"
-                  alt="Before UI Analysis"
-                  className="w-full h-auto block"
-                />
-                <div className="absolute inset-0 bg-white/5 dark:bg-black/5 rounded-lg" />
-              </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">Before: Manual workflow bottleneck</p>
-            </div>
-
-            {/* After */}
-            <div className="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-4 shadow-sm">
-              <div className="relative rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800">
-                <img
-                  src="/after-ui.png"
-                  alt="After UI Redesign"
-                  className="w-full h-auto block"
-                />
-                <div className="absolute inset-0 bg-white/5 dark:bg-black/5 rounded-lg" />
-              </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">After: Unified campaign system</p>
-            </div>
-          </div>
-        </section>
-
         {/* Roles & Stakeholders */}
         <section className="flex flex-col gap-8">
           <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm border-b border-gray-200 dark:border-gray-800 pb-2">My Role: Senior Product Designer / UX Lead</h3>
@@ -219,6 +151,75 @@ export default function CampaignSystemCaseStudy() {
             </div>
           </div>
         </section>
+
+        {/* Problem */}
+        <section className="flex flex-col gap-4">
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm">Problem</h3>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+            The campaign team was manually loading each promotion from scratch — coordinating across Sales, Legal, Engineering, and Operations within a semi-manual process. A single campaign took weeks of unstandardised manual work, limiting execution to once a year and creating massive risk to a core revenue driver platform used by 5M+ users.
+          </p>
+        </section>
+
+        {/* Impact & Outcomes */}
+        <section className="flex flex-col gap-4">
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm">Impact & Outcomes</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-0 border-y border-gray-200 dark:border-gray-800 divide-x divide-gray-200 dark:divide-gray-800 py-6 my-2">
+            <div className="flex flex-col px-6 gap-1">
+              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">£200k</span>
+              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">quarterly revenue uplift</span>
+            </div>
+            <div className="flex flex-col px-6 gap-1">
+              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">Zero</span>
+              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">incidents across all releases</span>
+            </div>
+            <div className="flex flex-col px-6 gap-1">
+              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">4x</span>
+              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">promotion frequency increase</span>
+            </div>
+            <div className="flex flex-col px-6 gap-1">
+              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">25%</span>
+              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">reduction in operational effort</span>
+            </div>
+          </div>
+          <p className="text-gray-600 dark:text-gray-400 text-sm mt-2">
+            The campaign system I redesigned enabled the business to run 4x more campaigns per year. At ~£30–40M revenue per campaign cycle, scaling from 1 to 4 annual campaigns directly contributed to significant revenue uplift — conservatively estimated at £200K+ in incremental quarterly gains.
+          </p>
+        </section>
+
+        {/* Design Decision (Before / After) */}
+        <section className="flex flex-col gap-8">
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm border-b border-gray-200 dark:border-gray-800 pb-2">Design Decision</h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Before */}
+            <div className="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-4 shadow-sm">
+              <div className="relative rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800">
+                <img
+                  src="/before-ui.png"
+                  alt="Before UI Analysis"
+                  className="w-full h-auto block"
+                />
+                <div className="absolute inset-0 bg-white/5 dark:bg-black/5 rounded-lg" />
+              </div>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">Before: Manual workflow bottleneck</p>
+            </div>
+
+            {/* After */}
+            <div className="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-4 shadow-sm">
+              <div className="relative rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800">
+                <img
+                  src="/after-ui.png"
+                  alt="After UI Redesign"
+                  className="w-full h-auto block"
+                />
+                <div className="absolute inset-0 bg-white/5 dark:bg-black/5 rounded-lg" />
+              </div>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">After: Unified campaign system</p>
+            </div>
+          </div>
+        </section>
+
+
 
         {/* Design Process CSS Flowchart */}
         <section className="flex flex-col gap-8 mb-16">

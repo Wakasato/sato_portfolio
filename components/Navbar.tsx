@@ -7,21 +7,31 @@ export default function Navbar() {
         <Link href="/" className="text-xl font-bold tracking-tight text-emerald-900 dark:text-emerald-400">
           Satomi <span className="font-light">| Product Designer</span>
         </Link>
-        <ul className="flex items-center gap-6 text-sm font-medium text-gray-600 dark:text-gray-300">
+        <ul className="flex items-center gap-6 text-sm sm:text-base font-semibold text-gray-900 dark:text-white">
           <li>
-            <Link href="/" className="hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors">
+            <Link href="/" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
               Home
             </Link>
           </li>
           <li>
-            <Link href="/projects" className="hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors">
+            <Link href="/projects" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
               Projects
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors">
+            <Link href="/contact" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
               Contact
             </Link>
+          </li>
+          <li>
+            <a 
+              href="https://drive.google.com/file/d/1y71yAzYkVOBZ0-lE5mVrkuVsZU56x4H-/view?usp=drive_link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+            >
+              CV
+            </a>
           </li>
         </ul>
       </div>

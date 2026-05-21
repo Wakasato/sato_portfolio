@@ -31,6 +31,10 @@ export default async function ProjectDetailPage({
     return <ShoreQuestCaseStudy />;
   }
 
+  if (id === 'checkout-ui') {
+    return <CheckoutUICaseStudy />;
+  }
+
   const project = projects.find((p) => p.id === id);
 
   if (!project) {
