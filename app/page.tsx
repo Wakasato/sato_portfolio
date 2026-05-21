@@ -18,10 +18,8 @@ export default function Home() {
           </p>
           <div className="mt-4 text-lg text-gray-800 dark:text-gray-200 leading-relaxed max-w-3xl space-y-4">
             <p>
-              6+ years experience designing complex digital products and a B2B SaaS platform.
-            </p>
-            <p>
-              Specialise in designing high-risk user journeys that require backend logic, pricing rules, and operational constraints to align.
+              MA Service Design (Royal College of Art, 2025) · 6+ years designing B2B SaaS and enterprise digital products. </p>
+                 <p> Published manga artist — visual storytelling applied to complex system design.
             </p>
           </div>
         </section>
