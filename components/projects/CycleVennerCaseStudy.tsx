@@ -59,7 +59,7 @@ export default function CycleVennerCaseStudy() {
           
           <div className="flex flex-col lg:flex-row gap-8 items-start">
             <div className="w-full lg:w-1/2">
-              <img src="/cyclevenner1.png" alt="Solution" className="w-full h-auto rounded-lg object-contain border border-gray-100 dark:border-gray-900 shadow-sm" />
+              <img src="/Cyclevenner1.png" alt="Solution" className="w-full h-auto rounded-lg object-contain border border-gray-100 dark:border-gray-900 shadow-sm" />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col gap-4">
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 marker:text-emerald-500">
