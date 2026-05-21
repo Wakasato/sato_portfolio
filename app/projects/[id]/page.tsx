@@ -1,6 +1,11 @@
 import { projects } from "@/lib/data";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import CampaignSystemCaseStudy from "@/components/projects/CampaignSystemCaseStudy";
+import CycleVennerCaseStudy from "@/components/projects/CycleVennerCaseStudy";
+import ConversionOptimisationCaseStudy from "@/components/projects/ConversionOptimisationCaseStudy";
+import ShoreQuestCaseStudy from "@/components/projects/ShoreQuestCaseStudy";
+import CheckoutUICaseStudy from "@/components/projects/CheckoutUICaseStudy";
 
 // In Next.js App Router, params must be awaited in dynamic routes
 export default async function ProjectDetailPage({
@@ -9,6 +14,23 @@ export default async function ProjectDetailPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
+
+  if (id === 'campaign-system') {
+    return <CampaignSystemCaseStudy />;
+  }
+
+  if (id === 'cycle-venner') {
+    return <CycleVennerCaseStudy />;
+  }
+
+  if (id === 'conversion-optimisation') {
+    return <ConversionOptimisationCaseStudy />;
+  }
+
+  if (id === 'shore-quest') {
+    return <ShoreQuestCaseStudy />;
+  }
+
   const project = projects.find((p) => p.id === id);
 
   if (!project) {

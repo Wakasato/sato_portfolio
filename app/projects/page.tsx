@@ -8,8 +8,14 @@ export default function ProjectsPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (
           <Link href={`/projects/${project.id}`} key={project.id} className="group flex flex-col border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
-            <div className="bg-gray-100 dark:bg-gray-900 h-48 w-full flex items-center justify-center">
-              <span className="text-gray-400 dark:text-gray-600 font-medium">Image Placeholder</span>
+            <div className="bg-gray-100 dark:bg-gray-900 h-48 w-full overflow-hidden">
+              {project.imageUrl ? (
+                <img src={project.imageUrl} alt={project.title} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" />
+              ) : (
+                <div className="flex items-center justify-center h-full">
+                  <span className="text-gray-400 dark:text-gray-600 font-medium">Image Placeholder</span>
+                </div>
+              )}
             </div>
             <div className="p-6 flex flex-col flex-1">
               <h2 className="text-xl font-semibold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{project.title}</h2>
