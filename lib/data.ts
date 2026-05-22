@@ -15,7 +15,7 @@ export const projects: Project[] = [
     title: "Campaign System",
     summary: "A comprehensive system to manage and track marketing campaigns.",
     description: "Designed the end-to-end user journey for a complex B2B campaign management system, focusing on usability, data visualization, and seamless workflow integration.",
-    imageUrl: "/welbox_stakeholder.png",
+    imageUrl: "/Welbox_Hero.png",
     techStack: ["UX/UI", "B2B SaaS", "User Research"],
   },
   {
