@@ -26,17 +26,13 @@ export default function CampaignSystemCaseStudy() {
             </p>
           </div>
 
-          {/* Hero Images Showcase */}
-          <div className="w-full mt-6 grid grid-cols-2 md:grid-cols-3 gap-4">
-            {/* Image 1: Main Platform View */}
-            <div className="rounded-lg overflow-hidden h-40">
-              <img src="/welbox.png" alt="Welbox Platform Desktop UI" className="w-full h-full object-contain block" />
-            </div>
-
-            {/* Image 2: Secondary / App View */}
-            <div className="rounded-lg overflow-hidden h-40">
-              <img src="/welbox2.png" alt="Welbox Platform Mobile/Detail UI" className="w-full h-full object-contain block" />
-            </div>
+          {/* Hero Image Showcase */}
+          <div className="w-full mt-6 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm bg-gray-50 dark:bg-gray-900">
+            <img 
+              src="/Welbox_Hero.png" 
+              alt="WELBOX Platform Campaign System Hero Image" 
+              className="w-full h-auto block" 
+            />
           </div>
         </section>
 
@@ -186,35 +182,131 @@ export default function CampaignSystemCaseStudy() {
           </p>
         </section>
 
-        {/* Design Decision (Before / After) */}
+        {/* Key Design Decisions */}
         <section className="flex flex-col gap-8">
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm border-b border-gray-200 dark:border-gray-800 pb-2">Design Decision</h3>
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm border-b border-gray-200 dark:border-gray-800 pb-2">
+            Key Design Decisions
+          </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Before */}
-            <div className="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-4 shadow-sm">
-              <div className="relative rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800">
-                <img
-                  src="/before-ui.png"
-                  alt="Before UI Analysis"
-                  className="w-full h-auto block"
-                />
-                <div className="absolute inset-0 bg-white/5 dark:bg-black/5 rounded-lg" />
+          <div className="flex flex-col gap-6 mt-4">
+            {/* Decision 1 */}
+            <div className="flex flex-col gap-4 p-6 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/30">
+              <div className="flex items-start gap-3">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-400 text-sm font-bold shrink-0 font-mono">
+                  1
+                </span>
+                <h4 className="text-lg font-bold text-gray-900 dark:text-white leading-snug">
+                  Prioritising operational reliability for a high-demand campaign system
+                </h4>
               </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">Before: Manual workflow bottleneck</p>
+              <div className="flex flex-col gap-3 text-gray-700 dark:text-gray-300 text-sm leading-relaxed pl-11 max-w-3xl">
+                <p>
+                  A quantitative survey with over 10,000 users revealed strong demand for discount campaigns and time-limited promotional offers.
+                </p>
+                <p>
+                  Because campaign visibility directly affected user engagement and platform revenue, I identified operational reliability as a critical UX issue — not just a backend concern.
+                </p>
+                <p>
+                  I worked closely with Legal, Engineering, Sales, and Operations teams to redesign the release workflow, introducing a structured 3-week validation cycle to reduce ambiguity, improve traceability, and minimise release risk.
+                </p>
+              </div>
             </div>
 
-            {/* After */}
-            <div className="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-4 shadow-sm">
-              <div className="relative rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800">
-                <img
-                  src="/after-ui.png"
-                  alt="After UI Redesign"
-                  className="w-full h-auto block"
-                />
-                <div className="absolute inset-0 bg-white/5 dark:bg-black/5 rounded-lg" />
+            {/* Decision 2 */}
+            <div className="flex flex-col gap-4 p-6 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/30">
+              <div className="flex items-start gap-3">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-400 text-sm font-bold shrink-0 font-mono">
+                  2
+                </span>
+                <h4 className="text-lg font-bold text-gray-900 dark:text-white leading-snug">
+                  Designing workflows for non-technical operational teams
+                </h4>
               </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">After: Unified campaign system</p>
+              <div className="flex flex-col gap-3 text-gray-700 dark:text-gray-300 text-sm leading-relaxed pl-11 max-w-3xl">
+                <p>
+                  The original campaign setup process depended heavily on manually maintained Excel files and fragmented operational knowledge.
+                </p>
+                <p>
+                  Rather than replacing existing workflows with engineering-heavy tooling, I designed lightweight JavaScript and JSON-based automation that reduced repetitive manual work while remaining accessible to non-technical teams.
+                </p>
+                <p>
+                  This allowed operational staff to maintain flexibility while significantly reducing human error and production overhead.
+                </p>
+              </div>
+            </div>
+
+            {/* Decision 3 */}
+            <div className="flex flex-col gap-6 p-6 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/30">
+              <div className="flex items-start gap-3">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-400 text-sm font-bold shrink-0 font-mono">
+                  3
+                </span>
+                <h4 className="text-lg font-bold text-gray-900 dark:text-white leading-snug">
+                  Reducing cognitive overload in campaign interfaces
+                </h4>
+              </div>
+              
+              <div className="flex flex-col gap-6 pl-11">
+                <div className="flex flex-col gap-3 text-gray-700 dark:text-gray-300 text-sm leading-relaxed max-w-3xl">
+                  <p>
+                    The original campaign pages exposed large amounts of backend product data directly to users, resulting in visually dense interfaces with weak information hierarchy.
+                  </p>
+                  <p>
+                    I simplified the interface by reducing unnecessary visual noise, restructuring typography, limiting colour usage, and selectively hiding non-essential data through CSS-based presentation rules.
+                  </p>
+                  <p>
+                    This improved scanability and made promotional information easier for users to understand quickly during high-traffic campaigns.
+                  </p>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2 w-full">
+                  {/* Before */}
+                  <div className="rounded-xl border border-gray-200 dark:border-gray-850 bg-white dark:bg-gray-900 p-4 shadow-sm">
+                    <div className="relative rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800">
+                      <img
+                        src="/before-ui.png"
+                        alt="Before UI Analysis"
+                        className="w-full h-auto block"
+                      />
+                      <div className="absolute inset-0 bg-white/5 dark:bg-black/5 rounded-lg" />
+                    </div>
+                    <p className="text-xs text-gray-600 dark:text-gray-400 mt-3 font-semibold">Before: Manual workflow bottleneck</p>
+                  </div>
+
+                  {/* After */}
+                  <div className="rounded-xl border border-gray-200 dark:border-gray-850 bg-white dark:bg-gray-900 p-4 shadow-sm">
+                    <div className="relative rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800">
+                      <img
+                        src="/after-ui.png"
+                        alt="After UI Redesign"
+                        className="w-full h-auto block"
+                      />
+                      <div className="absolute inset-0 bg-white/5 dark:bg-black/5 rounded-lg" />
+                    </div>
+                    <p className="text-xs text-gray-600 dark:text-gray-400 mt-3 font-semibold">After: Unified campaign system</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Decision 4 */}
+            <div className="flex flex-col gap-4 p-6 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/30">
+              <div className="flex items-start gap-3">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-400 text-sm font-bold shrink-0 font-mono">
+                  4
+                </span>
+                <h4 className="text-lg font-bold text-gray-900 dark:text-white leading-snug">
+                  Aligning UX decisions with operational scalability
+                </h4>
+              </div>
+              <div className="flex flex-col gap-3 text-gray-700 dark:text-gray-300 text-sm leading-relaxed pl-11 max-w-3xl">
+                <p>
+                  Instead of focusing only on new customer-facing features, I prioritised stabilising the operational infrastructure behind campaign delivery.
+                </p>
+                <p>
+                  By combining workflow redesign, validation improvements, and UI simplification, the business was able to safely increase campaign frequency from annual to quarterly releases without increasing operational risk.
+                </p>
+              </div>
             </div>
           </div>
         </section>
