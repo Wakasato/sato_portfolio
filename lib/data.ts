@@ -16,15 +16,15 @@ export const projects: Project[] = [
     summary: "A comprehensive system to manage and track marketing campaigns.",
     description: "Designed the end-to-end user journey for a complex B2B campaign management system, focusing on usability, data visualization, and seamless workflow integration.",
     imageUrl: "/Welbox_Hero.png",
-    techStack: ["UX/UI", "B2B SaaS", "User Research"],
+    techStack: ["UX/UI", "Product Design", "B2B SaaS", "User Research"],
   },
   {
     id: "cycle-venner",
     title: "Cycle Venner",
     summary: "A community platform for cycling enthusiasts to share routes and experiences.",
     description: "Led the product design for Cycle Venner, establishing a design system and creating intuitive mobile-first interfaces that encourage user engagement and community building.",
-    imageUrl: "/Cyclevenner.png",
-    techStack: ["Mobile Design", "Prototyping", "Figma"],
+    imageUrl: "/Cyclevenner_Hero.png",
+    techStack: ["Service Design", "User Research", "Ethnography", "Prototyping"],
   },
   {
     id: "conversion-optimisation",

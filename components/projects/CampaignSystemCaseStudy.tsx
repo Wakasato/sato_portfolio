@@ -28,10 +28,10 @@ export default function CampaignSystemCaseStudy() {
 
           {/* Hero Image Showcase */}
           <div className="w-full mt-6 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm bg-gray-50 dark:bg-gray-900">
-            <img 
-              src="/Welbox_Hero.png" 
-              alt="WELBOX Platform Campaign System Hero Image" 
-              className="w-full h-auto block" 
+            <img
+              src="/Welbox_Hero.png"
+              alt="WELBOX Platform Campaign System Hero Image"
+              className="w-full h-auto block"
             />
           </div>
         </section>
@@ -48,6 +48,35 @@ export default function CampaignSystemCaseStudy() {
             <span className="text-gray-700 dark:text-gray-300 ml-2">HR Tech</span>
           </div>
         </section>
+
+
+        {/* Impact & Outcomes */}
+        <section className="flex flex-col gap-4">
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm">Impact & Outcomes</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-0 border-y border-gray-200 dark:border-gray-800 divide-x divide-gray-200 dark:divide-gray-800 py-6 my-2">
+            <div className="flex flex-col px-6 gap-1">
+              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">£200k</span>
+              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">quarterly revenue uplift</span>
+            </div>
+            <div className="flex flex-col px-6 gap-1">
+              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">Zero</span>
+              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">incidents across all releases</span>
+            </div>
+            <div className="flex flex-col px-6 gap-1">
+              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">4x</span>
+              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">promotion frequency increase</span>
+            </div>
+            <div className="flex flex-col px-6 gap-1">
+              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">25%</span>
+              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">reduction in operational effort</span>
+            </div>
+          </div>
+          <p className="text-gray-600 dark:text-gray-400 text-sm mt-2">
+            The campaign system I redesigned enabled the business to run 4x more campaigns per year. At ~£30–40M revenue per campaign cycle, scaling from 1 to 4 annual campaigns directly contributed to significant revenue uplift — conservatively estimated at £200K+ in incremental quarterly gains.
+          </p>
+        </section>
+
+
         {/* Roles & Stakeholders */}
         <section className="flex flex-col gap-8">
           <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm border-b border-gray-200 dark:border-gray-800 pb-2">My Role: Senior Product Designer / UX Lead</h3>
@@ -149,38 +178,20 @@ export default function CampaignSystemCaseStudy() {
         </section>
 
         {/* Problem */}
-        <section className="flex flex-col gap-4">
+        <section className="flex flex-col gap-6">
           <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm">Problem</h3>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
             The campaign team was manually loading each promotion from scratch — coordinating across Sales, Legal, Engineering, and Operations within a semi-manual process. A single campaign took weeks of unstandardised manual work, limiting execution to once a year and creating massive risk to a core revenue driver platform used by 5M+ users.
           </p>
+          <div className="w-full max-w-2xl mx-auto mt-2 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm bg-gray-50 dark:bg-gray-900">
+            <img
+              src="/welbox_problems.png"
+              alt="WELBOX Platform Campaign System Problems"
+              className="w-full h-auto block"
+            />
+          </div>
         </section>
 
-        {/* Impact & Outcomes */}
-        <section className="flex flex-col gap-4">
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm">Impact & Outcomes</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-0 border-y border-gray-200 dark:border-gray-800 divide-x divide-gray-200 dark:divide-gray-800 py-6 my-2">
-            <div className="flex flex-col px-6 gap-1">
-              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">£200k</span>
-              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">quarterly revenue uplift</span>
-            </div>
-            <div className="flex flex-col px-6 gap-1">
-              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">Zero</span>
-              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">incidents across all releases</span>
-            </div>
-            <div className="flex flex-col px-6 gap-1">
-              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">4x</span>
-              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">promotion frequency increase</span>
-            </div>
-            <div className="flex flex-col px-6 gap-1">
-              <span className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">25%</span>
-              <span className="text-xs text-gray-500 font-medium uppercase leading-tight">reduction in operational effort</span>
-            </div>
-          </div>
-          <p className="text-gray-600 dark:text-gray-400 text-sm mt-2">
-            The campaign system I redesigned enabled the business to run 4x more campaigns per year. At ~£30–40M revenue per campaign cycle, scaling from 1 to 4 annual campaigns directly contributed to significant revenue uplift — conservatively estimated at £200K+ in incremental quarterly gains.
-          </p>
-        </section>
 
         {/* Key Design Decisions */}
         <section className="flex flex-col gap-8">
@@ -245,7 +256,7 @@ export default function CampaignSystemCaseStudy() {
                   Reducing cognitive overload in campaign interfaces
                 </h4>
               </div>
-              
+
               <div className="flex flex-col gap-6 pl-11">
                 <div className="flex flex-col gap-3 text-gray-700 dark:text-gray-300 text-sm leading-relaxed max-w-3xl">
                   <p>
@@ -258,7 +269,7 @@ export default function CampaignSystemCaseStudy() {
                     This improved scanability and made promotional information easier for users to understand quickly during high-traffic campaigns.
                   </p>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2 w-full">
                   {/* Before */}
                   <div className="rounded-xl border border-gray-200 dark:border-gray-850 bg-white dark:bg-gray-900 p-4 shadow-sm">
@@ -374,6 +385,47 @@ export default function CampaignSystemCaseStudy() {
                 <h5 className="font-bold text-gray-900 dark:text-white">Validation & Research</h5>
                 <p className="text-gray-600 dark:text-gray-400">Conducted a 10,000+ user survey to identify unmet needs, revealing strong demand for sales campaigns.</p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Reflection */}
+        <section className="flex flex-col gap-8 mb-16">
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm border-b border-gray-200 dark:border-gray-800 pb-2">Reflection</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex flex-col gap-3">
+              <h4 className="font-bold text-gray-900 dark:text-white text-base">Designing Beyond the Interface</h4>
+              <ul className="list-disc list-inside text-sm text-gray-700 dark:text-gray-300 space-y-2 marker:text-emerald-500">
+                <li>Scalable systems are organisational challenges, not only UI challenges</li>
+                <li>Product reliability depended on aligning Sales, Legal, Engineering, and Operations</li>
+                <li>Reducing ambiguity across teams was as important as improving the interface itself</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <h4 className="font-bold text-gray-900 dark:text-white text-base">Working Within Constraints</h4>
+              <ul className="list-disc list-inside text-sm text-gray-700 dark:text-gray-300 space-y-2 marker:text-emerald-500">
+                <li>Legacy systems and operational dependencies limited what could realistically be changed</li>
+                <li>Many stakeholders were non-technical, requiring solutions that balanced usability and operational flexibility</li>
+                <li>Explored lightweight alternatives instead of introducing engineering-heavy processes</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <h4 className="font-bold text-gray-900 dark:text-white text-base">Operational Reliability Over Feature Expansion</h4>
+              <ul className="list-disc list-inside text-sm text-gray-700 dark:text-gray-300 space-y-2 marker:text-emerald-500">
+                <li>Prioritised stability and validation before adding new functionality</li>
+                <li>Introduced clearer workflows and approval structures to reduce operational risk</li>
+                <li>Improved predictability enabled the business to scale campaign releases from annual to quarterly cycles</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <h4 className="font-bold text-gray-900 dark:text-white text-base">Communication as a Design Tool</h4>
+              <ul className="list-disc list-inside text-sm text-gray-700 dark:text-gray-300 space-y-2 marker:text-emerald-500">
+                <li>Used sketches and visual explanations to align multidisciplinary teams</li>
+                <li>Visual storytelling helped externalise complex workflows and reduce misunderstanding during planning and validation phases</li>
+              </ul>
             </div>
           </div>
         </section>
