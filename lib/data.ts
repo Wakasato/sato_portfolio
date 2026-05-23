@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: "Cycle Venner",
     summary: "A community platform for cycling enthusiasts to share routes and experiences.",
     description: "Led the product design for Cycle Venner, establishing a design system and creating intuitive mobile-first interfaces that encourage user engagement and community building.",
-    imageUrl: "/Cyclevenner_Hero.png",
+    imageUrl: "/cyclevenner_Hero.png",
     techStack: ["Service Design", "User Research", "Ethnography", "Prototyping"],
   },
   {
