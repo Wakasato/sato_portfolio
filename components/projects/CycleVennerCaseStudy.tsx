@@ -41,7 +41,7 @@ export default function CycleVennerCaseStudy() {
           {/* Hero Image Showcase */}
           <div className="w-full mt-6 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm bg-gray-50 dark:bg-gray-900">
             <img
-              src="/Cyclevenner_Hero.png"
+              src="/cyclevenner_Hero.png"
               alt="CycleVenner Hero Image"
               className="w-full h-auto block"
             />
