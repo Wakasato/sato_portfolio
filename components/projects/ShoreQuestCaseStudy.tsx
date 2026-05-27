@@ -91,92 +91,47 @@ export default function ShoreQuestCaseStudy() {
           </h3>
           
           <div className="flex flex-col gap-4">
-            <h4 className="text-xl font-semibold italic text-center text-gray-800 dark:text-gray-200 my-2">
-              "I DON'T WANT TO BE A TOURIST"
-            </h4>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-              {/* Notebook page sketch */}
-              <div className="w-full flex flex-col gap-2">
-                <span className="text-xs text-gray-500 dark:text-gray-400 font-mono">Qualitative insights captured in research notebook</span>
-                <img src="/ShoreQuest_sketch.png" alt="Research notebook sketches" className="w-full h-auto rounded-lg shadow-sm border border-gray-100 dark:border-gray-900" />
-              </div>
-
-              {/* Transcription of notebook quotes */}
-              <div className="flex flex-col gap-6">
-                <span className="text-xs text-gray-500 dark:text-gray-400 font-mono uppercase tracking-wider">Interviewee Profiles & Speech Bubbles</span>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {/* Mom Profile */}
-                  <div className="p-4 rounded-xl bg-gray-50 dark:bg-gray-950 border border-gray-100 dark:border-gray-900 flex flex-col gap-2">
-                    <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase">Mom Profile</span>
-                    <p className="text-xs italic text-gray-700 dark:text-gray-300">
-                      "I know what regenerative tourism."
-                    </p>
-                    <p className="text-[11px] text-gray-500 dark:text-gray-400">
-                      "In the five scale: It's 5 out 3 Importance"
-                    </p>
-                  </div>
-
-                  {/* Teacher Profile */}
-                  <div className="p-4 rounded-xl bg-gray-50 dark:bg-gray-950 border border-gray-100 dark:border-gray-900 flex flex-col gap-2">
-                    <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase">Teacher ("dog owner")</span>
-                    <p className="text-xs italic text-gray-700 dark:text-gray-300">
-                      "Yes, I am a green person. I bring my eco cup to coffee shops."
-                    </p>
-                    <p className="text-[11px] text-gray-500 dark:text-gray-400">
-                      "Sustainable and regenerative tourism is extremely important"
-                    </p>
-                  </div>
-
-                  {/* Tatoo man Profile */}
-                  <div className="p-4 rounded-xl bg-gray-50 dark:bg-gray-950 border border-gray-100 dark:border-gray-900 flex flex-col gap-2">
-                    <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase">Tattoo Man Profile</span>
-                    <p className="text-xs italic text-gray-700 dark:text-gray-300">
-                      "Adventure is my favourite tour type. pubs. Festival. beer.."
-                    </p>
-                    <p className="text-[11px] text-gray-500 dark:text-gray-400">
-                      "I don't care about sustainability"
-                    </p>
-                  </div>
-
-                  {/* Elderly couple Profile */}
-                  <div className="p-4 rounded-xl bg-gray-50 dark:bg-gray-950 border border-gray-100 dark:border-gray-900 flex flex-col gap-2">
-                    <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase">Marine Sports Lover</span>
-                    <p className="text-xs italic text-gray-700 dark:text-gray-300">
-                      "I am a marine sports lover."
-                    </p>
-                    <p className="text-[11px] text-gray-500 dark:text-gray-400">
-                      "I am concerned about sustainability"
-                    </p>
-                  </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mt-2">
+              
+              {/* Left Column: Sketch 1 & Keith */}
+              <div className="w-full flex flex-col gap-6">
+                <div className="flex flex-col gap-2">
+                  <span className="text-xs text-gray-500 dark:text-gray-400 font-mono">Qualitative insights captured in research notebook</span>
+                  <img src="/ShoreQuest_sketch.png" alt="Research notebook sketches" className="w-full h-auto rounded-lg" />
+                  <p className="text-sm font-medium italic text-center text-gray-900 dark:text-gray-100 mt-1">
+                    "I DON'T WANT TO BE A TOURIST"
+                  </p>
                 </div>
-
+                
                 {/* Keith in Hyde Park */}
-                <div className="p-4 rounded-xl bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-100/50 dark:border-emerald-900/30 flex flex-col gap-2">
-                  <span className="text-xs font-bold text-emerald-700 dark:text-emerald-300 uppercase">2025/03/31 Interviews & Survey — Keith in Hyde Park</span>
-                  <p className="text-xs italic text-gray-700 dark:text-gray-300">
+                <div className="flex flex-col gap-2">
+                  <span className="text-xs font-bold uppercase text-gray-900 dark:text-gray-100">2025/03/31 Interviews & Survey — Keith in Hyde Park</span>
+                  <p className="text-sm italic text-gray-900 dark:text-gray-100 leading-relaxed">
                     "Regenerative tourism? I love the idea. I don't want to be a 'tourist'. Doing-nothing in French rural town was nice."
                   </p>
-                  <p className="text-xs italic text-gray-700 dark:text-gray-300 font-semibold mt-1">
+                  <p className="text-sm italic text-gray-900 dark:text-gray-100 font-semibold mt-1 leading-relaxed">
                     "Sit down and Relax... watch. hear... This is what I love."
                   </p>
                 </div>
               </div>
-            </div>
 
-            {/* RNLI Volunteer Staff Section */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mt-6 bg-gray-50 dark:bg-gray-950 p-6 rounded-2xl border border-gray-100 dark:border-gray-900">
-              <div className="md:col-span-1 flex flex-col items-center gap-2">
-                <span className="text-xs text-gray-500 font-mono">RNLI Volunteer Sketch</span>
-                <img src="/ShoreQuest_sketch2.png" alt="RNLI volunteer staff sketch" className="w-full max-w-[200px] h-auto object-contain rounded-lg" />
+              {/* Right Column: Sketch 2 & RNLI */}
+              <div className="w-full flex flex-col gap-6">
+                <div className="flex flex-col gap-2">
+                  <span className="text-xs text-gray-500 dark:text-gray-400 font-mono">RNLI Volunteer Sketch</span>
+                  <img src="/ShoreQuest_sketch2.png" alt="RNLI volunteer staff sketch" className="w-full h-auto object-contain rounded-lg" />
+                </div>
+                
+                {/* RNLI Volunteer Staff Interview */}
+                <div className="flex flex-col gap-2 h-full">
+                  <span className="text-xs font-bold uppercase text-gray-900 dark:text-gray-100 tracking-wide">RNLI Volunteer Staff Interview</span>
+                  <p className="text-sm italic text-gray-900 dark:text-gray-100 leading-relaxed">
+                    "It's off-season, but in high season, summer, people come here to swim and kite boarding. And eat fish & chips."
+                  </p>
+                </div>
               </div>
-              <div className="md:col-span-2 flex flex-col gap-3">
-                <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide">RNLI Volunteer Staff Interview</span>
-                <p className="text-sm italic text-gray-700 dark:text-gray-300 leading-relaxed">
-                  "It's off-season, but in high season, summer, people come here to swim and kite boarding. And eat fish & chips."
-                </p>
-              </div>
+
             </div>
 
             {/* Quantitative Survey Section */}
@@ -185,11 +140,11 @@ export default function ShoreQuestCaseStudy() {
                 Questionnaire for UK people
               </h5>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="flex items-center justify-center bg-gray-50 dark:bg-gray-950 p-6 rounded-xl border border-gray-100 dark:border-gray-900">
+                <div className="flex items-center justify-center p-6 rounded-xl">
                   <img src="/shoreQuest_pie1.png" alt="42% Familiar with Regenerative Tourism" className="w-48 h-auto object-contain" />
                 </div>
 
-                <div className="flex items-center justify-center bg-gray-50 dark:bg-gray-950 p-6 rounded-xl border border-gray-100 dark:border-gray-900">
+                <div className="flex items-center justify-center">
                   <img src="/ShoreQuest_pie2.png" alt="22% Experienced Regenerative Tourism" className="w-48 h-auto object-contain" />
                 </div>
               </div>
