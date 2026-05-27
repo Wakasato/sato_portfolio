@@ -19,11 +19,6 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
-              Contact
-            </Link>
-          </li>
-          <li>
             <a 
               href="https://drive.google.com/file/d/1y71yAzYkVOBZ0-lE5mVrkuVsZU56x4H-/view?usp=drive_link" 
               target="_blank" 
