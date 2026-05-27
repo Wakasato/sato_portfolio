@@ -6,12 +6,20 @@ export default function ProjectsPage() {
     <div className="max-w-5xl mx-auto px-6 py-12">
       <h1 className="text-3xl font-bold mb-8">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((project) => (
-          <Link href={`/projects/${project.id}`} key={project.id} className="group flex flex-col border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
-            <div className="bg-gray-100 dark:bg-gray-900 h-48 w-full overflow-hidden">
-              {project.imageUrl ? (
-                <img src={project.imageUrl} alt={project.title} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" />
-              ) : (
+        {projects.map((project) => {
+          const isExternal = !!project.externalLink;
+          return (
+            <Link 
+              href={project.externalLink || `/projects/${project.id}`} 
+              key={project.id} 
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
+              className="group flex flex-col border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden hover:border-gray-300 dark:hover:border-gray-700 transition-colors"
+            >
+              <div className="bg-gray-100 dark:bg-gray-900 h-48 w-full overflow-hidden">
+                {project.imageUrl ? (
+                  <img src={project.imageUrl} alt={project.title} className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${project.imagePosition || 'object-center'}`} />
+                ) : (
                 <div className="flex items-center justify-center h-full">
                   <span className="text-gray-400 dark:text-gray-600 font-medium">Image Placeholder</span>
                 </div>
@@ -29,7 +37,8 @@ export default function ProjectsPage() {
               </div>
             </div>
           </Link>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

@@ -10,16 +10,12 @@ export default function Home() {
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-2">
             Satomi Portfolio
           </h1>
-          <p className="text-sm font-medium tracking-widest text-emerald-700 dark:text-emerald-400 uppercase">
-            | UX/UI | B2B SaaS | Service Design | RCA |
-          </p>
           <p className="text-gray-600 dark:text-gray-400">
             London, UK | Open to Contract, FTC, and Permanent roles.
           </p>
           <div className="mt-4 text-lg text-gray-800 dark:text-gray-200 leading-relaxed max-w-3xl space-y-4">
             <p>
-              MA Service Design (Royal College of Art, 2025) · 6+ years designing B2B SaaS and enterprise digital products. </p>
-                 <p> Published manga artist — visual storytelling applied to complex system design.
+            Designing operationally complex SaaS products across workflows, compliance, and service delivery — 6+ years across Japan and the UK. MA Service Design, Royal College of Art.
             </p>
           </div>
         </section>
@@ -90,42 +86,6 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Side projects */}
-          <section className="flex flex-col gap-6 border-t border-gray-100 dark:border-gray-900 pt-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Side projects</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              
-              {/* AI Coding Card */}
-              <a href="https://github.com/wakasato/my-jobhunting-app" target="_blank" rel="noopener noreferrer" className="group flex flex-col border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
-                  <div className="bg-gray-100 dark:bg-gray-900 h-48 w-full overflow-hidden">
-                    <img src="/jobtracker.png" alt="React.JS + AI coding" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300" />
-                  </div>
-                  <div className="p-6 flex flex-col flex-1">
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">React.JS + AI coding</h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">
-                      AI-assisted product experiments and workflow tools.
-                    </p>
-                  </div>
-              </a>
-
-              {/* Visual Storytelling Card */}
-              <Link href="/projects/shore-quest" className="group flex flex-col border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
-                  <div className="bg-gray-100 dark:bg-gray-900 h-48 w-full overflow-hidden">
-                    <img src="/storytelling.png" alt="Visual Storytelling" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" />
-                  </div>
-                  <div className="p-6 flex flex-col flex-1">
-                    <h3 className="text-xl font-semibold mb-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">Visual Storytelling</h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm mt-1 mb-4 flex-1">
-                      Using sketching and narrative techniques to communicate complex services, align stakeholders, and synthesise user research.
-                    </p>
-                    <span className="text-sm font-medium text-emerald-600 dark:text-emerald-400 group-hover:underline underline-offset-4">
-                      View Shore Quest Case Study →
-                    </span>
-                  </div>
-              </Link>
-
-            </div>
-          </section>
 
       </div>
     </div>

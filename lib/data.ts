@@ -7,6 +7,8 @@ export interface Project {
   techStack: string[];
   link?: string;
   github?: string;
+  externalLink?: string;
+  imagePosition?: string;
 }
 
 export const projects: Project[] = [
@@ -45,9 +47,21 @@ export const projects: Project[] = [
   {
     id: "shore-quest",
     title: "ShoreQuest",
-    summary: "An interactive application for exploring coastal areas and history.",
-    description: "Created an engaging and educational interface for ShoreQuest. Focused on integrating mapping features with rich storytelling elements to enhance the user's exploratory experience.",
-    imageUrl: "/shoreQuest.png",
+    summary: "Using sketching and narrative techniques to communicate complex services, align stakeholders, and synthesise user research.",
+    description: "Using sketching and narrative techniques to communicate complex services, align stakeholders, and synthesise user research.",
+    imageUrl: "/storytelling.png",
     techStack: ["App Design", "Service Design", "Visual Storytelling"],
+  },
+  {
+    id: "react-ai-coding",
+    title: "React.JS + AI coding",
+    summary: "AI-assisted product experiments and workflow tools.",
+    description: "Demo: https://my-jobhunting-app.vercel.app/\nDemo ID: demo@example.com\nDemo Password: password123",
+    imageUrl: "/jobtracker.png",
+    techStack: ["React.js", "AI Tools", "Frontend"],
+    github: "https://github.com/wakasato/my-jobhunting-app",
+    link: "https://my-jobhunting-app.vercel.app/",
+    externalLink: "https://github.com/wakasato/my-jobhunting-app",
+    imagePosition: "object-top"
   }
 ];
