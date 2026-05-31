@@ -49,7 +49,7 @@ export const projects: Project[] = [
     title: "Checkout UI",
     summary: "A streamlined and secure checkout experience for an e-commerce platform.",
     description: "Redesigned the checkout process to reduce cart abandonment. Simplified the UI, clarified pricing and security elements, and optimized the flow for both desktop and mobile users.",
-    imageUrl: "/UI_Hero.png",
+    imageUrl: "/UI_HERO.png",
     techStack: ["UI Design", "E-commerce", "Interaction Design", "Component Libraries"],
   },
   {
