@@ -28,6 +28,14 @@ export const projects: Project[] = [
     imageUrl: "/cyclevenner_Hero.png",
     techStack: ["Service Design", "User Research", "Ethnography", "Prototyping"],
   },
+    {
+    id: "shore-quest",
+    title: "ShoreQuest",
+    summary: "Using sketching and narrative techniques to communicate complex services, align stakeholders, and synthesise user research.",
+    description: "Using sketching and narrative techniques to communicate complex services, align stakeholders, and synthesise user research.",
+    imageUrl: "/ShoreQuest_Hero.png",
+    techStack: ["App Design", "Service Design", "Visual Storytelling", "User Research"],
+  },
   {
     id: "conversion-optimisation",
     title: "Conversion Optimisation",
@@ -43,14 +51,6 @@ export const projects: Project[] = [
     description: "Redesigned the checkout process to reduce cart abandonment. Simplified the UI, clarified pricing and security elements, and optimized the flow for both desktop and mobile users.",
     imageUrl: "/UI_Hero.png",
     techStack: ["UI Design", "E-commerce", "Interaction Design", "Component Libraries"],
-  },
-  {
-    id: "shore-quest",
-    title: "ShoreQuest",
-    summary: "Using sketching and narrative techniques to communicate complex services, align stakeholders, and synthesise user research.",
-    description: "Using sketching and narrative techniques to communicate complex services, align stakeholders, and synthesise user research.",
-    imageUrl: "/storytelling.png",
-    techStack: ["App Design", "Service Design", "Visual Storytelling"],
   },
   {
     id: "react-ai-coding",
