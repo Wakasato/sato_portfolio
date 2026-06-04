@@ -33,7 +33,7 @@ export const projects: Project[] = [
     title: "ShoreQuest",
     summary: "Using sketching and narrative techniques to communicate complex services, align stakeholders, and synthesise user research.",
     description: "Using sketching and narrative techniques to communicate complex services, align stakeholders, and synthesise user research.",
-    imageUrl: "/ShoreQuest_Hero.png",
+    imageUrl: "/shorequesthero.png",
     techStack: ["App Design", "Service Design", "Visual Storytelling", "User Research"],
   },
   {

@@ -50,7 +50,7 @@ export default function ShoreQuestCaseStudy() {
 
         {/* Hero Image Section */}
         <section className="w-full">
-          <img src="/ShoreQuest_Hero.png" alt="ShoreQuest Hero Key Visual" className="w-full h-auto rounded-2xl shadow-md border border-gray-100 dark:border-gray-950" />
+          <img src="/shorequesthero.png" alt="ShoreQuest Hero Key Visual" className="w-full h-auto rounded-2xl shadow-md border border-gray-100 dark:border-gray-950" />
         </section>
 
         {/* Overview (Problems, Mission, Solution) */}
