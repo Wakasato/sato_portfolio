@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function CampaignSystemCaseStudy() {
+  const [modalImage, setModalImage] = useState<string | null>(null);
+
   return (
     <div className="bg-white dark:bg-black min-h-screen text-gray-900 dark:text-gray-100">
       <div className="max-w-4xl mx-auto px-6 py-16 flex flex-col gap-16">
@@ -273,26 +278,32 @@ export default function CampaignSystemCaseStudy() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2 w-full">
                   {/* Before */}
                   <div className="rounded-xl border border-gray-200 dark:border-gray-850 bg-white dark:bg-gray-900 p-4 shadow-sm">
-                    <div className="relative rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800">
+                    <div 
+                      className="relative rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800 cursor-zoom-in transition-transform hover:scale-[1.02]"
+                      onClick={() => setModalImage("/before-ui.png")}
+                    >
                       <img
                         src="/before-ui.png"
                         alt="Before UI Analysis"
                         className="w-full h-auto block"
                       />
-                      <div className="absolute inset-0 bg-white/5 dark:bg-black/5 rounded-lg" />
+                      <div className="absolute inset-0 bg-white/5 dark:bg-black/5 rounded-lg pointer-events-none" />
                     </div>
                     <p className="text-xs text-gray-600 dark:text-gray-400 mt-3 font-semibold">Before: Manual workflow bottleneck</p>
                   </div>
 
                   {/* After */}
                   <div className="rounded-xl border border-gray-200 dark:border-gray-850 bg-white dark:bg-gray-900 p-4 shadow-sm">
-                    <div className="relative rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800">
+                    <div 
+                      className="relative rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800 cursor-zoom-in transition-transform hover:scale-[1.02]"
+                      onClick={() => setModalImage("/after-ui.png")}
+                    >
                       <img
                         src="/after-ui.png"
                         alt="After UI Redesign"
                         className="w-full h-auto block"
                       />
-                      <div className="absolute inset-0 bg-white/5 dark:bg-black/5 rounded-lg" />
+                      <div className="absolute inset-0 bg-white/5 dark:bg-black/5 rounded-lg pointer-events-none" />
                     </div>
                     <p className="text-xs text-gray-600 dark:text-gray-400 mt-3 font-semibold">After: Unified campaign system</p>
                   </div>
@@ -431,6 +442,16 @@ export default function CampaignSystemCaseStudy() {
         </section>
 
       </div>
+
+      {/* Fullscreen Image Modal */}
+      {modalImage && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 cursor-zoom-out"
+          onClick={() => setModalImage(null)}
+        >
+          <img src={modalImage} alt="Fullscreen View" className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl" />
+        </div>
+      )}
     </div>
   );
 }

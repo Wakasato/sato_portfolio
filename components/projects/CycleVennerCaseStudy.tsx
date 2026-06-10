@@ -131,6 +131,27 @@ export default function CycleVennerCaseStudy() {
           </div>
         </section>
 
+        {/* Primary Research */}
+        <section className="flex flex-col gap-8">
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm border-b border-gray-200 dark:border-gray-800 pb-2">Primary Research</h3>
+          <div className="flex flex-col md:flex-row gap-8 items-stretch">
+            <div className="w-full md:w-1/2">
+              <img
+                src="/cyclevenner_research.png"
+                alt="CycleVenner Research"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="w-full md:w-1/2">
+              <img
+                src="/cyclevenner_sketch2.png"
+                alt="CycleVenner Sketch"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Our Insight */}
         <section className="flex flex-col gap-8">
           <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider text-sm border-b border-gray-200 dark:border-gray-800 pb-2">Our Insight</h3>
