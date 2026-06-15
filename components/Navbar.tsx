@@ -20,7 +20,7 @@ export default function Navbar() {
           </li>
           <li>
             <a 
-              href="https://drive.google.com/file/d/1CPNopGPcZbat0l1nSNrWtKufj5HFpi_-/view?usp=drive_link" 
+              href="https://drive.google.com/file/d/1Uk0tyKznv3cxQbTYsgPU7cg-x2NmKUdF/view?usp=drive_link" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"

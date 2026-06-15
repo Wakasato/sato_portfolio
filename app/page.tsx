@@ -15,7 +15,7 @@ export default function Home() {
           </p>
           <div className="mt-4 text-lg text-gray-800 dark:text-gray-200 leading-relaxed max-w-3xl space-y-4">
             <p>
-            Designing operationally complex SaaS products across workflows, compliance, and service delivery — 6+ years across Japan and the UK. MA Service Design, Royal College of Art.
+            Product & Service Designer with 6+ years of experience designing B2B SaaS platforms, operational services, and customer-facing digital experiences across Japan and the UK. Specialising in user research, workflow optimisation, and service transformation in complex and regulated environments. MA Service Design, Royal College of Art.
             </p>
           </div>
         </section>
