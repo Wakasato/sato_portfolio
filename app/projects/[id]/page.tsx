@@ -42,39 +42,35 @@ export default async function ProjectDetailPage({
   }
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-12">
-      <Link href="/projects" className="text-sm text-gray-500 hover:text-black dark:hover:text-white transition-colors mb-8 inline-flex items-center gap-2">
+    <div className="max-w-3xl mx-auto px-6 py-16 sm:py-24">
+      <Link href="/projects" className="text-sm text-muted hover:text-accent transition-colors mb-10 inline-flex items-center gap-2">
         ← Back to Projects
       </Link>
-      
-      <div className="bg-gray-100 dark:bg-gray-900 h-64 sm:h-96 w-full rounded-2xl mb-8 flex items-center justify-center">
-        <span className="text-gray-400 dark:text-gray-600 font-medium">Image Placeholder</span>
+
+      <div className="bg-surface h-64 sm:h-96 w-full border border-border mb-8 flex items-center justify-center">
+        <span className="text-muted font-medium">Image Placeholder</span>
       </div>
 
-      <h1 className="text-3xl sm:text-4xl font-bold mb-4">{project.title}</h1>
-      
-      <div className="flex flex-wrap gap-2 mb-8">
+      <h1 className="font-display text-3xl sm:text-4xl font-medium tracking-tight text-foreground mb-4">{project.title}</h1>
+
+      <div className="flex flex-wrap gap-x-4 gap-y-1 mb-8 text-xs uppercase tracking-wide text-muted">
         {project.techStack.map((tech) => (
-          <span key={tech} className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-sm rounded-full text-gray-700 dark:text-gray-300">
-            {tech}
-          </span>
+          <span key={tech}>{tech}</span>
         ))}
       </div>
 
-      <div className="prose dark:prose-invert max-w-none">
-        <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-          {project.description}
-        </p>
-      </div>
+      <p className="text-lg leading-relaxed text-foreground/90 max-w-none">
+        {project.description}
+      </p>
 
-      <div className="flex gap-4 mt-12 pt-8 border-t border-gray-100 dark:border-gray-900">
+      <div className="flex gap-4 mt-12 pt-8 border-t border-border">
         {project.link && (
-          <a href={project.link} target="_blank" rel="noopener noreferrer" className="px-5 py-2 bg-black text-white dark:bg-white dark:text-black rounded-full text-sm font-medium hover:opacity-90 transition-opacity">
+          <a href={project.link} target="_blank" rel="noopener noreferrer" className="px-5 py-2 bg-accent text-accent-foreground text-sm font-medium hover:opacity-90 transition-opacity">
             Visit Project
           </a>
         )}
         {project.github && (
-          <a href={project.github} target="_blank" rel="noopener noreferrer" className="px-5 py-2 border border-gray-200 dark:border-gray-800 rounded-full text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
+          <a href={project.github} target="_blank" rel="noopener noreferrer" className="px-5 py-2 border border-border text-sm font-medium hover:bg-surface transition-colors">
             View Source
           </a>
         )}
