@@ -6,6 +6,7 @@ import CycleVennerCaseStudy from "@/components/projects/CycleVennerCaseStudy";
 import ConversionOptimisationCaseStudy from "@/components/projects/ConversionOptimisationCaseStudy";
 import ShoreQuestCaseStudy from "@/components/projects/ShoreQuestCaseStudy";
 import CheckoutUICaseStudy from "@/components/projects/CheckoutUICaseStudy";
+import TravelHandsCaseStudy from "@/components/projects/TravelHandsCaseStudy";
 
 // In Next.js App Router, params must be awaited in dynamic routes
 export default async function ProjectDetailPage({
@@ -33,6 +34,10 @@ export default async function ProjectDetailPage({
 
   if (id === 'checkout-ui') {
     return <CheckoutUICaseStudy />;
+  }
+
+  if (id === 'travel-hands') {
+    return <TravelHandsCaseStudy />;
   }
 
   const project = projects.find((p) => p.id === id);

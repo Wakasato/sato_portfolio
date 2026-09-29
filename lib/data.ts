@@ -13,6 +13,14 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "travel-hands",
+    title: "Travel Hands",
+    summary: "Investigating healthcare access barriers for visually impaired people and the real-world accessibility of an AI voice assistant.",
+    description: "AI Voice Assistant Accessibility Investigation — Travel Hands × Macmillan Cancer Support-funded feasibility study.",
+    imageUrl: "/Travelhands_hero.png",
+    techStack: ["Service Design", "Accessibility", "User Research", "AI"],
+  },
+  {
     id: "campaign-system",
     title: "Campaign System",
     summary: "A comprehensive system to manage and track marketing campaigns.",
