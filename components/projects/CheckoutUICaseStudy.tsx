@@ -31,7 +31,7 @@ export default function CheckoutUICaseStudy() {
         <section className="flex flex-wrap gap-x-8 gap-y-2 -mt-8 text-sm">
           <div>
             <span className="font-semibold text-foreground">Role:</span>
-            <span className="text-muted ml-2">UI Designer, Coder</span>
+            <span className="text-muted ml-2">Designer, Coder</span>
           </div>
 
           <div>
@@ -98,6 +98,59 @@ export default function CheckoutUICaseStudy() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Same components, two sites */}
+        <section className="flex flex-col gap-8">
+          <h3 className="font-display text-sm font-semibold text-muted uppercase tracking-[0.2em] border-b border-border pb-4">One Component Set, Multiple Sites</h3>
+
+          <div className="flex flex-col gap-4 max-w-3xl">
+            <p className="text-sm text-muted leading-relaxed">
+              Designed and implemented a unified set of checkout UI components for five large e-commerce sites. Built the front end in HTML, CSS and JavaScript with backend engineers.
+            </p>
+            <div className="flex flex-col gap-2 text-sm">
+              <p>
+                <span className="font-semibold text-foreground">Before:</span>
+                <span className="text-muted ml-2">Many complaints were received because of the confusing UI.</span>
+              </p>
+              <p>
+                <span className="font-semibold text-foreground">Result:</span>
+                <span className="text-muted ml-2">Zero complaints from customers.</span>
+              </p>
+            </div>
+          </div>
+
+          <figure className="flex flex-col gap-4">
+            <div className="relative">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start">
+                <div className="flex flex-col gap-2">
+                  <div className="border border-border bg-surface">
+                    <img src="/UI3.png" alt="Site A order confirmation screen, black theme, cash on delivery" className="w-full h-auto" />
+                  </div>
+                  <p className="text-xs text-muted">
+                    <span className="font-semibold text-foreground">Site A:</span> black theme, cash on delivery (fee shown)
+                  </p>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <div className="border border-border bg-surface">
+                    <img src="/UI4.png" alt="Site B order confirmation screen, blue theme, pay later" className="w-full h-auto" />
+                  </div>
+                  <p className="text-xs text-muted">
+                    <span className="font-semibold text-foreground">Site B:</span> blue theme, pay later (no fee row)
+                  </p>
+                </div>
+              </div>
+
+              {/* Shared-structure note, overlaid across both screenshots */}
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] sm:w-auto sm:max-w-sm bg-foreground/35 text-background text-[11px] sm:text-xs text-center px-3 py-2 pointer-events-none">
+                Same structure on both sites: 4-step indicator, order summary table, payment method, change button
+              </div>
+            </div>
+
+            <figcaption className="text-sm text-muted leading-relaxed max-w-3xl">
+              Order confirmation screen of two fashion e-commerce sites, built from the same set of checkout UI components. Brand names are hidden due to client confidentiality.
+            </figcaption>
+          </figure>
         </section>
 
         {/* Outcome */}
